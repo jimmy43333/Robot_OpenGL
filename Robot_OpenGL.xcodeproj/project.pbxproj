@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		4D5E402E207DA49600A9BA8B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E402D207DA49600A9BA8B /* main.cpp */; };
+		4D5E4038207DA4CB00A9BA8B /* libglut.3.10.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5E4034207DA4CB00A9BA8B /* libglut.3.10.0.dylib */; };
+		4D5E4039207DA4CB00A9BA8B /* libglut.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5E4035207DA4CB00A9BA8B /* libglut.a */; };
+		4D5E403A207DA4CB00A9BA8B /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5E4036207DA4CB00A9BA8B /* libGLEW.a */; };
+		4D5E403B207DA4CB00A9BA8B /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5E4037207DA4CB00A9BA8B /* libGLEW.2.1.0.dylib */; };
+		4D5E403E207DA4DC00A9BA8B /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5E403D207DA4DC00A9BA8B /* OpenGL.framework */; };
+		4D5E4040207DA4E600A9BA8B /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5E403F207DA4E600A9BA8B /* GLUT.framework */; };
+		4D5E4043207DA59100A9BA8B /* CallBack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E4041207DA59100A9BA8B /* CallBack.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +32,16 @@
 /* Begin PBXFileReference section */
 		4D5E402A207DA49600A9BA8B /* Robot_OpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Robot_OpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5E402D207DA49600A9BA8B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4D5E4034207DA4CB00A9BA8B /* libglut.3.10.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglut.3.10.0.dylib; path = ../../../../usr/local/Cellar/freeglut/3.0.0/lib/libglut.3.10.0.dylib; sourceTree = "<group>"; };
+		4D5E4035207DA4CB00A9BA8B /* libglut.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglut.a; path = ../../../../usr/local/Cellar/freeglut/3.0.0/lib/libglut.a; sourceTree = "<group>"; };
+		4D5E4036207DA4CB00A9BA8B /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLEW.a; path = ../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.a; sourceTree = "<group>"; };
+		4D5E4037207DA4CB00A9BA8B /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		4D5E403D207DA4DC00A9BA8B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4D5E403F207DA4E600A9BA8B /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		4D5E4041207DA59100A9BA8B /* CallBack.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CallBack.cpp; sourceTree = "<group>"; };
+		4D5E4042207DA59100A9BA8B /* CallBack.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CallBack.hpp; sourceTree = "<group>"; };
+		4D5E4044207DA6A500A9BA8B /* vertex_shader.glsl */ = {isa = PBXFileReference; lastKnownFileType = text; path = vertex_shader.glsl; sourceTree = "<group>"; };
+		4D5E4045207DA6CB00A9BA8B /* fragment_shader.glsl */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = fragment_shader.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +49,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5E4040207DA4E600A9BA8B /* GLUT.framework in Frameworks */,
+				4D5E403E207DA4DC00A9BA8B /* OpenGL.framework in Frameworks */,
+				4D5E403B207DA4CB00A9BA8B /* libGLEW.2.1.0.dylib in Frameworks */,
+				4D5E4038207DA4CB00A9BA8B /* libglut.3.10.0.dylib in Frameworks */,
+				4D5E4039207DA4CB00A9BA8B /* libglut.a in Frameworks */,
+				4D5E403A207DA4CB00A9BA8B /* libGLEW.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +64,13 @@
 		4D5E4021207DA49600A9BA8B = {
 			isa = PBXGroup;
 			children = (
+				4D5E4037207DA4CB00A9BA8B /* libGLEW.2.1.0.dylib */,
+				4D5E4036207DA4CB00A9BA8B /* libGLEW.a */,
+				4D5E4034207DA4CB00A9BA8B /* libglut.3.10.0.dylib */,
+				4D5E4035207DA4CB00A9BA8B /* libglut.a */,
 				4D5E402C207DA49600A9BA8B /* Robot_OpenGL */,
 				4D5E402B207DA49600A9BA8B /* Products */,
+				4D5E403C207DA4DB00A9BA8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,8 +86,21 @@
 			isa = PBXGroup;
 			children = (
 				4D5E402D207DA49600A9BA8B /* main.cpp */,
+				4D5E4041207DA59100A9BA8B /* CallBack.cpp */,
+				4D5E4042207DA59100A9BA8B /* CallBack.hpp */,
+				4D5E4044207DA6A500A9BA8B /* vertex_shader.glsl */,
+				4D5E4045207DA6CB00A9BA8B /* fragment_shader.glsl */,
 			);
 			path = Robot_OpenGL;
+			sourceTree = "<group>";
+		};
+		4D5E403C207DA4DB00A9BA8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D5E403F207DA4E600A9BA8B /* GLUT.framework */,
+				4D5E403D207DA4DC00A9BA8B /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5E4043207DA59100A9BA8B /* CallBack.cpp in Sources */,
 				4D5E402E207DA49600A9BA8B /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,6 +275,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -241,6 +288,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/opt/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
